@@ -80,7 +80,7 @@ Why Develop Scenarios?
 ----------------------
 
 Explore the Range of Possiblities
-____________________________________
+_________________________________
 
 .. image:: graphics/RangeOfPossibilities.svg
 
@@ -102,8 +102,6 @@ ___________________
 Uncertainty comes in many forms. Building a suite of scenarios can help us choose options that remain viable under a wider variety of factors that we cannot control locally. 
 
 Examples: Population Change (do we have larger or smaller population growth?), Climate Change (Exposure to risk of fire or flood), Economic Growth (changes to the economy, new sectors, rate of growth), Public Sentiment (preference for residential location or format).
-
-
 
 
 Communicate with Stakeholders
@@ -142,6 +140,7 @@ What Is UrbanFootprint?
   * State of California (Ca. SGC, Ca. HSRA)
   * MPOs (SACOG, SANDAG, SCAG)
   * NGOs
+  * Calthorpe Analytics LLC
   * Other State and Federal Grants
 
 Open Source
@@ -153,7 +152,7 @@ ___________
   * Anyone who receives the product is entitled to the code
   * Anyone with the code can inspect and modify it
   * Anyone with the code can redistribute it under these same sets of rules.
-* The software is “free”
+* The software is “free”, as in "free speech", but not necessarily as in "free lunch"
 
   * Hardware, hosting, support, and staffing not included.
 
@@ -168,8 +167,8 @@ Discussion
 
 
 
-Open Source Software Used by Urban Footprint
-____________________________________________
+Open Source Software Used by UrbanFootprint
+___________________________________________
 
 Ubuntu: http://www.ubuntu.com/
 
@@ -192,6 +191,7 @@ GDAL: http://www.gdal.org/
 * Geographic data translation
 
 TileStache: http://tilestache.org/
+
 * Map tile server (provides the graphical content for maps)
 
 Apache: http://httpd.apache.org/
@@ -248,22 +248,22 @@ Charts
 
 .. image:: graphics/Charts.png
 
-These graphs give you a quick summary of the population, dwelling unit, and employment totals and mixtures for the scenario
+These graphs give you a quick summary of the population, dwelling unit, and employment totals and mixtures for the scenario. Development is underway on viewing the analysis outputs for the scenario.
 
 The Map
 +++++++
 
 .. image:: graphics/BaseCase.png
 
-Analytical Engines
-++++++++++++++++++
+Analysis Modules
+++++++++++++++++
 
 .. image:: graphics/AnalyticalEngines.png
 
 * A wide range of analytical tools that have been built to work with UrbanFootprint.
 * Many are linked to each other meaning that outputs from the transportation analysis feed into the public health, criteria pollutant emissions, household costs, and greenhouse gas calculations.
-* At present most of these tools have to be run from command line on the server not through the User Interface (UI).
-* These analytical engines frequently require calibration to the local environment.
+* These analysis modules were developed for command line execution, and are currently being integrated into the front-end.
+* Analysis modules frequently require calibration to the local environment.
 
 
 Creating Scenarios
@@ -336,8 +336,7 @@ _____________________________
 Discussion
 ++++++++++
 
-#. Following scenario creation, or iteratively throughout the process before selecting final versions of a scenario, the performance measures can be calculated. 
-#. Currently many of these calculations need to be triggered from the command line. 
+#. Following scenario creation, or iteratively throughout the process before selecting final versions of a scenario, the performance measures can be calculated.
 #. Some of them are relatively fast calculations returning results within seconds, others may take substantially longer depending on the area being calculated and the type of analysis. Transportation in particular can take a while to run.
 
 Transportation Engine
@@ -345,7 +344,7 @@ _____________________
 
 .. image:: graphics/TransportSACOG2035.jpg
 
-Graphics can be prepared from the analytical engines that are effective communication tools. This graphic shows the average vehicle miles traveled per household in the Sacramento Area. 
+Graphics can be prepared from the analytical engines that are effective communication tools. This graphic shows the average vehicle miles traveled per household in the Sacramento Area.
 
 .. image:: graphics/TransportEngine1.png
 
@@ -358,7 +357,7 @@ In many cases the raw results won’t be suitable for presentation immediately a
 
 
 Public Health
-_____________________
+_____________
 
 .. image:: graphics/PublicHealth.png
 
@@ -366,7 +365,7 @@ Discussion
 ++++++++++
 The public health performance measure build on the results of the travel analysis. Results from it can indicate possible changes to public health (diabetes, respiratory, cardiovascular, and auto-pedestrian acciedents) based on the scenario.
 
-The results presented here are from the 2012 Vision California work conducted by Calthorpe Associates and cover the Sacramento region.
+The draft results presented here are from the 2012 Vision California work conducted by Calthorpe Associates and cover the Sacramento region. The Public Health module is currently under development.
 
 Informing Decisions
 -------------------
